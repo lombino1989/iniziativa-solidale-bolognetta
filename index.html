@@ -1,199 +1,483 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="it">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  <!-- Primary Meta Tags -->
-  <title>Manus AI Ultra - Suite AI Completa</title>
-  <meta name="title" content="Manus AI Ultra - Suite AI Completa" />
-  <meta name="description" content="La suite di intelligenza artificiale più completa e avanzata con 60+ strumenti, ricerca web, generazione AI e funzionalità offline. Nessuna registrazione richiesta." />
-  <meta name="keywords" content="AI, intelligenza artificiale, strumenti, productivity, generatore password, QR code, convertitore unità, JSON formatter, color picker" />
-  <meta name="author" content="Manus AI Team" />
-  <meta name="robots" content="index, follow" />
-  <meta name="language" content="Italian" />
-  
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://manus-ai-ultra.com" />
-  <meta property="og:title" content="Manus AI Ultra - Suite AI Completa" />
-  <meta property="og:description" content="60+ strumenti AI, ricerca web integrata, funzionalità offline. Accesso libero senza limitazioni." />
-  <meta property="og:image" content="/images/og-image.png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:site_name" content="Manus AI Ultra" />
-  <meta property="og:locale" content="it_IT" />
-  
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://manus-ai-ultra.com" />
-  <meta property="twitter:title" content="Manus AI Ultra - Suite AI Completa" />
-  <meta property="twitter:description" content="60+ strumenti AI, ricerca web integrata, funzionalità offline. Accesso libero senza limitazioni." />
-  <meta property="twitter:image" content="/images/twitter-card.png" />
-  <meta property="twitter:creator" content="@ManusAI" />
-  
-  <!-- PWA Meta Tags -->
-  <meta name="theme-color" content="#3B82F6" />
-  <meta name="background-color" content="#ffffff" />
-  <meta name="display" content="standalone" />
-  <meta name="orientation" content="any" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-  <meta name="apple-mobile-web-app-title" content="ManusAI" />
-  <meta name="mobile-web-app-capable" content="yes" />
-  <meta name="msapplication-TileColor" content="#3B82F6" />
-  <meta name="msapplication-tap-highlight" content="no" />
-  <meta name="format-detection" content="telephone=no" />
-  
-  <!-- Favicon and Icons -->
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
-  <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#3B82F6" />
-  
-  <!-- PWA Manifest -->
-  <link rel="manifest" href="/manifest.json" />
-  
-  <!-- Preload Critical Resources -->
-  <link rel="preload" href="/src/main.tsx" as="script" />
-  <link rel="preload" href="/src/index.css" as="style" />
-  
-  <!-- DNS Prefetch for External Resources -->
-  <link rel="dns-prefetch" href="//fonts.googleapis.com" />
-  <link rel="dns-prefetch" href="//fonts.gstatic.com" />
-  
-  <!-- Security Headers -->
-  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
-  <meta http-equiv="X-Frame-Options" content="DENY" />
-  <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
-  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
-  
-  <!-- Performance Hints -->
-  <meta http-equiv="Cache-Control" content="public, max-age=31536000" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
-  
-  <!-- Schema.org Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "Manus AI Ultra",
-    "description": "Suite completa di intelligenza artificiale con 60+ strumenti",
-    "url": "https://manus-ai-ultra.com",
-    "applicationCategory": "BusinessApplication",
-    "operatingSystem": "Any",
-    "permissions": "none",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "EUR"
-    },
-    "featureList": [
-      "60+ Strumenti AI",
-      "Ricerca Web Integrata", 
-      "Generatore Password",
-      "QR Code Generator",
-      "Color Picker",
-      "JSON Formatter",
-      "Convertitore Unità",
-      "Funzionalità Offline"
-    ],
-    "screenshot": "/images/screenshot-main.png",
-    "softwareVersion": "2.0.0",
-    "releaseNotes": "Versione ultra-completa con funzionalità avanzate"
-  }
-  </script>
-  
-  <!-- Loading Screen Styles -->
-  <style>
-    #loading-screen {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      z-index: 9999;
-      color: white;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    }
-    
-    .loading-content {
-      text-align: center;
-      animation: pulse 2s infinite;
-    }
-    
-    .loading-logo {
-      font-size: 4rem;
-      margin-bottom: 1rem;
-    }
-    
-    .loading-text {
-      font-size: 1.5rem;
-      font-weight: 600;
-      margin-bottom: 0.5rem;
-    }
-    
-    .loading-subtitle {
-      font-size: 1rem;
-      opacity: 0.8;
-    }
-    
-    @keyframes pulse {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.7; }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volontari del Cuore Bolognetta - Supporto Sociale e Compagnia</title>
+    <meta name="description" content="Iniziativa di volontariato sociale a Bolognetta. Supporto e compagnia per persone fragili nelle case di cura.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
-  <!-- Loading Screen -->
-  <div id="loading-screen">
-    <div class="loading-content">
-      <div class="loading-logo">🤖</div>
-      <div class="loading-text">Manus AI Ultra</div>
-      <div class="loading-subtitle">Inizializzazione in corso...</div>
-    </div>
-  </div>
-  
-  <!-- App Root -->
-  <div id="root"></div>
-  
-  <!-- Main Script -->
-  <script type="module" src="/src/main.tsx"></script>
-  
-  <!-- Loading Screen Removal -->
-  <script>
-    window.addEventListener('load', () => {
-      setTimeout(() => {
-        const loadingScreen = document.getElementById('loading-screen');
-        if (loadingScreen) {
-          loadingScreen.style.opacity = '0';
-          loadingScreen.style.transition = 'opacity 0.5s ease';
-          setTimeout(() => {
-            loadingScreen.remove();
-          }, 500);
-        }
-      }, 1000);
-    });
-    
-    // Service Worker Support Check
-    if (!('serviceWorker' in navigator)) {
-      console.warn('Service Worker non supportato in questo browser');
-    }
-    
-    // Performance monitoring
-    window.addEventListener('load', () => {
-      if ('performance' in window) {
-        const loadTime = performance.timing.loadEventEnd - performance.timing.navigationStart;
-        console.log(`⚡ App caricata in ${loadTime}ms`);
-      }
-    });
-  </script>
-</body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images/logo_volontari.png" alt="Logo Volontari del Cuore" class="logo-img">
+                <span class="logo-text">Volontari del Cuore</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#chi-siamo" class="nav-link">Chi Siamo</a>
+                <a href="#servizi" class="nav-link">I Nostri Servizi</a>
+                <a href="#astronomia" class="nav-link">Astronomia</a>
+                <a href="#divise" class="nav-link">Le Nostre Divise</a>
+                <a href="#giulio" class="nav-link">Giulio in Servizio</a>
+                <a href="#contatti" class="nav-link">Contatti</a>
+                <a href="#unisciti" class="nav-link cta-link">Unisciti a Noi</a>
+            </div>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Volontari del Cuore Bolognetta</h1>
+            <p class="hero-subtitle">Supporto sociale e compagnia per persone con fragilità</p>
+            <div class="hero-description">
+                <p>Un'iniziativa di volontariato guidata da <strong>Giulio Francesco Lombino</strong> per offrire compagnia, ascolto e supporto emotivo a chi ne ha più bisogno.</p>
+            </div>
+            <div class="hero-buttons">
+                <a href="#servizi" class="btn btn-primary">Scopri i Nostri Servizi</a>
+                <a href="#contatti" class="btn btn-secondary">Contattaci</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="images/giulio_divisa_completa.png" alt="Giulio Francesco Lombino in divisa completa" class="hero-photo">
+        </div>
+    </section>
+
+    <!-- Chi Siamo Section -->
+    <section id="chi-siamo" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Chi Siamo</h2>
+                <p class="section-subtitle">La nostra storia e la nostra missione</p>
+            </div>
+            <div class="chi-siamo-content">
+                <div class="chi-siamo-text">
+                    <h3>La Nostra Storia</h3>
+                    <p>L'iniziativa "Volontari del Cuore Bolognetta" nasce dall'idea di <strong>Giulio Francesco Lombino</strong>, 36 anni, con l'obiettivo di fornire supporto sociale e compagnia alle persone con fragilità nelle case di cura e strutture assistenziali del territorio.</p>
+                    
+                    <h3>La Nostra Missione</h3>
+                    <p>Non siamo un'associazione sanitaria registrata, ma un servizio di supporto sociale che collabora con le case di cura locali per offrire:</p>
+                    <ul class="mission-list">
+                        <li><i class="fas fa-heart"></i> Compagnia per persone anziane e fragili</li>
+                        <li><i class="fas fa-ear-listen"></i> Supporto emotivo e ascolto attivo</li>
+                        <li><i class="fas fa-hands-helping"></i> Presenza accanto a chi ha bisogno</li>
+                        <li><i class="fas fa-users"></i> Attività di socializzazione</li>
+                    </ul>
+                    
+                    <h3>I Nostri Valori</h3>
+                    <p>Crediamo fermamente nel valore della presenza umana, dell'ascolto e del supporto emotivo. La nostra professionalità si manifesta attraverso l'uso di divise riconoscibili e un approccio serio e dedicato al servizio sociale.</p>
+                </div>
+                <div class="chi-siamo-image">
+                    <img src="images/giulio_estiva_servizio.png" alt="Giulio in servizio con divisa estiva" class="profile-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servizi Section -->
+    <section id="servizi" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">I Nostri Servizi</h2>
+                <p class="section-subtitle">Supporto sociale professionale per la comunità</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Compagnia per Anziani</h3>
+                    <p>Offriamo presenza e compagnia a persone anziane e fragili nelle case di cura, creando momenti di condivisione e socializzazione.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Supporto Emotivo</h3>
+                    <p>Ascolto attivo e supporto emotivo per chi vive momenti di difficoltà, offrendo un punto di riferimento umano e rassicurante.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Tempo di Qualità</h3>
+                    <p>Dedichiamo tempo di qualità alle persone che assistiamo, attraverso conversazioni, giochi e attività ricreative.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Visite nelle Case di Cura</h3>
+                    <p>Collaboriamo con le strutture assistenziali locali per organizzare visite regolari e programmate.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Sostegno Morale</h3>
+                    <p>Forniamo sostegno morale e incoraggiamento, aiutando le persone a mantenere uno spirito positivo.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Collegamento Sociale</h3>
+                    <p>Aiutiamo a mantenere i legami sociali e a creare nuove connessioni all'interno delle strutture assistenziali.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Astronomia Section -->
+    <section id="astronomia" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Astronomia per il Cuore</h2>
+                <p class="section-subtitle">Portiamo le meraviglie dell'universo nelle case di cura</p>
+                <p class="section-description">
+                    Il nostro progetto speciale unisce la passione per l'astronomia al supporto sociale. 
+                    Condividiamo la bellezza di galassie, nebulose e pianeti con le persone che assistiamo, 
+                    creando momenti di meraviglia e connessione con l'infinito.
+                </p>
+            </div>
+            
+            <div class="astronomy-controls">
+                <div class="update-info">
+                    <i class="fas fa-sync-alt"></i>
+                    <span>Aggiornamento automatico ogni 30 minuti</span>
+                    <span id="last-update">Ultimo aggiornamento: Caricamento...</span>
+                </div>
+                <div class="image-filters">
+                    <button class="filter-btn active" data-filter="all">Tutto</button>
+                    <button class="filter-btn" data-filter="galaxies">Galassie</button>
+                    <button class="filter-btn" data-filter="nebulae">Nebulose</button>
+                    <button class="filter-btn" data-filter="planets">Pianeti</button>
+                    <button class="filter-btn" data-filter="star_clusters">Ammassi</button>
+                </div>
+            </div>
+
+            <div class="astronomy-gallery" id="hubble-gallery">
+                <div class="loading-spinner">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <p>Caricamento immagini da Hubble...</p>
+                </div>
+            </div>
+
+            <div class="astronomy-info">
+                <div class="info-grid">
+                    <div class="info-card">
+                        <i class="fas fa-telescope"></i>
+                        <h3>Osservazioni del Cielo</h3>
+                        <p>Utilizziamo immagini reali del telescopio spaziale Hubble per far scoprire l'universo agli ospiti delle case di cura.</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-star"></i>
+                        <h3>Racconti Stellari</h3>
+                        <p>Ogni immagine diventa una storia da raccontare, un momento di meraviglia condiviso con chi ha bisogno di compagnia.</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-heart"></i>
+                        <h3>Connessione Universale</h3>
+                        <p>L'astronomia ci ricorda che siamo tutti parte di qualcosa di più grande, creando legami profondi attraverso la bellezza del cosmo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Divise Section -->
+    <section id="divise" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Le Nostre Divise Professionali</h2>
+                <p class="section-subtitle">Riconoscibilità e professionalità nel servizio</p>
+            </div>
+            <div class="divise-intro">
+                <p>Le nostre divise sono progettate per garantire riconoscibilità e professionalità durante il servizio. Ogni capo è studiato per offrire comfort e praticità nelle diverse condizioni operative.</p>
+            </div>
+            <div class="divise-gallery">
+                <div class="divisa-item">
+                    <img src="images/divisa_estiva_gialla.png" alt="Divisa estiva gialla" class="divisa-img">
+                    <h3>Divisa Estiva</h3>
+                    <p>Polo gialla traspirante per il servizio nei mesi caldi</p>
+                </div>
+                <div class="divisa-item">
+                    <img src="images/divisa_invernale_gialla.png" alt="Divisa invernale gialla" class="divisa-img">
+                    <h3>Divisa Invernale</h3>
+                    <p>Felpa gialla per il comfort durante i mesi freddi</p>
+                </div>
+                <div class="divisa-item">
+                    <img src="images/gilet_giallo_senza_maglietta.png" alt="Gilet alta visibilità" class="divisa-img">
+                    <h3>Gilet Alta Visibilità</h3>
+                    <p>Gilet catarifrangente per la sicurezza durante il servizio</p>
+                </div>
+                <div class="divisa-item">
+                    <img src="images/pantaloni_tuta_gialli.png" alt="Pantaloni tuta gialli" class="divisa-img">
+                    <h3>Pantaloni Coordinati</h3>
+                    <p>Pantaloni comodi e pratici coordinati alle divise</p>
+                </div>
+                <div class="divisa-item">
+                    <img src="images/set_completo_divisa.png" alt="Set completo divise" class="divisa-img">
+                    <h3>Set Completo</h3>
+                    <p>Coordinato completo per tutte le stagioni</p>
+                </div>
+                <div class="divisa-item">
+                    <img src="images/badge_patch.png" alt="Badge patch ufficiale" class="divisa-img">
+                    <h3>Badge Ufficiale</h3>
+                    <p>Distintivo di riconoscimento per i volontari</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Giulio in Servizio Section -->
+    <section id="giulio" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Giulio in Servizio</h2>
+                <p class="section-subtitle">Il fondatore dell'iniziativa durante le attività di volontariato</p>
+            </div>
+            <div class="giulio-gallery">
+                <div class="giulio-item">
+                    <img src="images/giulio_divisa_completa.png" alt="Giulio in divisa completa" class="giulio-img">
+                    <div class="giulio-caption">
+                        <h3>Divisa Completa</h3>
+                        <p>Giulio Francesco Lombino in divisa completa, pronto per il servizio di supporto sociale</p>
+                    </div>
+                </div>
+                <div class="giulio-item">
+                    <img src="images/giulio_gilet_servizio.png" alt="Giulio con gilet in servizio" class="giulio-img">
+                    <div class="giulio-caption">
+                        <h3>Durante il Servizio</h3>
+                        <p>In azione con il gilet alta visibilità durante le attività di assistenza</p>
+                    </div>
+                </div>
+                <div class="giulio-item">
+                    <img src="images/giulio_estiva_servizio.png" alt="Giulio in divisa estiva durante servizio" class="giulio-img">
+                    <div class="giulio-caption">
+                        <h3>Divisa Estiva</h3>
+                        <p>Con la divisa estiva durante le visite nelle case di cura</p>
+                    </div>
+                </div>
+            </div>
+            <div class="giulio-bio">
+                <h3>Chi è Giulio Francesco Lombino</h3>
+                <p><strong>Giulio Francesco Lombino</strong>, 36 anni, è il fondatore e coordinatore dell'iniziativa "Volontari del Cuore Bolognetta". Con la sua dedizione e professionalità, ha dato vita a questo progetto di supporto sociale che mette al centro la persona e i suoi bisogni emotivi.</p>
+                <p>La sua esperienza nel volontariato e la sua sensibilità verso le persone fragili lo hanno portato a creare un servizio che unisce professionalità e calore umano, riconoscibile attraverso le divise dedicate e un approccio strutturato al sostegno sociale.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contatti Section -->
+    <section id="contatti" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contatti</h2>
+                <p class="section-subtitle">Come raggiungerci per informazioni e collaborazioni</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Informazioni di Contatto</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-user"></i>
+                        <div>
+                            <strong>Coordinatore</strong>
+                            <p>Giulio Francesco Lombino</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Zona di Servizio</strong>
+                            <p>Bolognetta (PA) e dintorni</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email</strong>
+                            <p><a href="mailto:telecronaca1989@gmail.com">telecronaca1989@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <strong>WhatsApp</strong>
+                            <p><a href="https://wa.me/393803899860" target="_blank">+39 380 389 9860</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Telefono Fisso</strong>
+                            <p><a href="tel:+390918737047">091 873 7047</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-note">
+                        <p><strong>Nota:</strong> Siamo un'iniziativa di volontariato sociale, non un servizio sanitario di emergenza. Per emergenze mediche contattare sempre il 118.</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Invia un Messaggio</h3>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="nome">Nome e Cognome *</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Telefono</label>
+                            <input type="tel" id="telefono" name="telefono">
+                        </div>
+                        <div class="form-group">
+                            <label for="tipo">Tipo di Richiesta</label>
+                            <select id="tipo" name="tipo">
+                                <option value="informazioni">Informazioni generali</option>
+                                <option value="collaborazione">Proposta di collaborazione</option>
+                                <option value="volontariato">Interesse nel volontariato</option>
+                                <option value="altro">Altro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="messaggio">Messaggio *</label>
+                            <textarea id="messaggio" name="messaggio" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Invia Messaggio</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Unisciti a Noi Section -->
+    <section id="unisciti" class="section bg-primary">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Unisciti a Noi</h2>
+                <p class="section-subtitle">Diventa parte della nostra famiglia di volontari</p>
+            </div>
+            <div class="unisciti-content">
+                <div class="unisciti-text">
+                    <h3>Perché Diventare Volontario?</h3>
+                    <p>Unirsi ai "Volontari del Cuore" significa fare la differenza nella vita delle persone più fragili della nostra comunità. Non servono competenze specifiche, solo il desiderio di dedicare del tempo agli altri.</p>
+                    
+                    <h3>Cosa Offriamo:</h3>
+                    <ul class="benefits-list">
+                        <li><i class="fas fa-check"></i> Formazione e supporto continuo</li>
+                        <li><i class="fas fa-check"></i> Divisa professionale fornita</li>
+                        <li><i class="fas fa-check"></i> Flessibilità negli orari</li>
+                        <li><i class="fas fa-check"></i> Esperienza significativa di crescita personale</li>
+                        <li><i class="fas fa-check"></i> Supporto del team sempre disponibile</li>
+                    </ul>
+                    
+                    <h3>Requisiti:</h3>
+                    <ul class="requirements-list">
+                        <li><i class="fas fa-heart"></i> Empatia e sensibilità verso gli altri</li>
+                        <li><i class="fas fa-heart"></i> Disponibilità di almeno 2 ore alla settimana</li>
+                        <li><i class="fas fa-heart"></i> Maggiore età</li>
+                        <li><i class="fas fa-heart"></i> Affidabilità e puntualità</li>
+                    </ul>
+                </div>
+                <div class="volunteer-form">
+                    <h3>Candidati Come Volontario</h3>
+                    <form id="volunteer-form">
+                        <div class="form-group">
+                            <label for="v-nome">Nome e Cognome *</label>
+                            <input type="text" id="v-nome" name="nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="v-email">Email *</label>
+                            <input type="email" id="v-email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="v-telefono">Telefono *</label>
+                            <input type="tel" id="v-telefono" name="telefono" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="v-eta">Età</label>
+                            <input type="number" id="v-eta" name="eta" min="18" max="80">
+                        </div>
+                        <div class="form-group">
+                            <label for="v-disponibilita">Disponibilità Settimanale</label>
+                            <select id="v-disponibilita" name="disponibilita">
+                                <option value="2-4">2-4 ore</option>
+                                <option value="4-8">4-8 ore</option>
+                                <option value="8+">Più di 8 ore</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="v-motivazione">Perché vuoi diventare volontario? *</label>
+                            <textarea id="v-motivazione" name="motivazione" rows="4" required></textarea>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            <label for="privacy">Accetto il trattamento dei dati personali secondo la normativa sulla privacy *</label>
+                        </div>
+                        <button type="submit" class="btn btn-secondary">Invia Candidatura</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/logo_volontari.png" alt="Logo Volontari del Cuore" class="footer-logo-img">
+                        <span class="footer-logo-text">Volontari del Cuore Bolognetta</span>
+                    </div>
+                    <p>Iniziativa di volontariato sociale per il supporto e la compagnia di persone con fragilità.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contatti</h4>
+                    <p><i class="fas fa-user"></i> Giulio Francesco Lombino</p>
+                    <p><i class="fas fa-envelope"></i> info@volontaridelcuore.it</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Bolognetta (PA)</p>
+                </div>
+                <div class="footer-section">
+                    <h4>I Nostri Servizi</h4>
+                    <ul>
+                        <li>Compagnia per anziani</li>
+                        <li>Supporto emotivo</li>
+                        <li>Visite nelle case di cura</li>
+                        <li>Attività di socializzazione</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Seguici</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Volontari del Cuore Bolognetta - Iniziativa di volontariato sociale</p>
+                <p><small><strong>IMPORTANTE:</strong> Non siamo un servizio sanitario di emergenza. Per emergenze mediche contattare il 118.</small></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
 </html>

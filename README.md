@@ -1,385 +1,162 @@
-# 🚀 Manus AI ULTRA - Piattaforma AI Completa Senza Limitazioni
+# 🌟 Volontari del Cuore Bolognetta
 
-![Manus AI Ultra](public/manus-avatar.png)
+Sito web ufficiale dell'iniziativa di volontariato "Volontari del Cuore Bolognetta" - Un progetto dedicato al supporto sociale e alla condivisione delle meraviglie dell'astronomia con persone con fragilità.
 
-**La versione più avanzata e completa di Manus AI mai creata** - **59+ strumenti**, ricerca web reale, zero limitazioni, completamente gratuito e senza login.
+## 🚀 Sito Live
+**👀 Visita il sito:** [https://lombino1989.github.io/iniziativa-solidale-bolognetta/](https://lombino1989.github.io/iniziativa-solidale-bolognetta/)
 
-[![Status: Ultra Complete](https://img.shields.io/badge/Status-Ultra%20Complete-brightgreen)](https://github.com/tuousername/manus-ai-ultra)
-[![Tools Count](https://img.shields.io/badge/Tools-59+-blue)](https://github.com/tuousername/manus-ai-ultra)
-[![No Limitations](https://img.shields.io/badge/Limitations-Zero-green)](https://github.com/tuousername/manus-ai-ultra)
-[![Live Demo](https://img.shields.io/badge/Demo-Live-orange)](https://tuousername.github.io/manus-ai-ultra)
+Il sito include una sezione astronomica speciale con immagini reali dal telescopio spaziale Hubble per portare le meraviglie dell'universo nelle case di cura.
 
-## ✨ Caratteristiche Ultra-Avanzate
+## 🌟 Caratteristiche
 
-### 🌐 **Ricerca Web Reale (6 Tipi)**
-- **🔍 Web Search**: Ricerca internet con API DuckDuckGo reale
-- **📰 News Search**: Notizie real-time da RSS feeds multiple
-- **🖼️ Image Search**: Milioni di immagini da Unsplash API
-- **🎥 Video Search**: Ricerca video YouTube integrata
-- **🎓 Academic Search**: Paper scientifici da arXiv API
-- **📱 Social Search**: Simulazione ricerche social media
+- **Sito Web Responsive**: Design moderno e professionale
+- **Sezione Astronomia**: Immagini reali di Hubble che si aggiornano ogni 30 minuti
+- **Filtri Dinamici**: Visualizza galassie, nebulose, pianeti e ammassi stellari
+- **Aggiornamento Automatico**: Sistema backend che scarica le ultime immagini
+- **Design Professionale**: Divise personalizzate in stile Misericordia
 
-### 🤖 **AI Engine Ultra-Completo**
-- **💬 Chat AI Illimitato**: Conversazioni senza limiti con memoria persistente
-- **💻 Code Generator**: Generazione codice in 20+ linguaggi
-- **📄 Document Analyzer**: Analisi AI di PDF, Word, Excel, PowerPoint
-- **🔊 Text-to-Speech**: Sintesi vocale avanzata multilingua
-- **🎤 Speech-to-Text**: Riconoscimento vocale in tempo reale
-- **🌍 Universal Translator**: Traduzione istantanea 100+ lingue
-- **📝 Smart Summarizer**: Riassunti intelligenti automatici
-- **🎨 Image Generator**: Creazione immagini AI (simulata)
+## 🚀 Installazione e Avvio
 
-### 🛠️ **Suite Tools Completa (20+ Strumenti)**
-- **🖼️ Image Editor**: Editor completo con filtri, resize, crop, effetti
-- **📝 Text Tools**: Analisi testo, conteggi, trasformazioni, pulizia
-- **🔗 URL Shortener**: Accorciatore con QR code e analytics
-- **🔐 Password Generator**: Generatore password ultra-sicuro
-- **🧮 Scientific Calculator**: Calcolatrice scientifica avanzata
-- **🔒 Hash Generator**: MD5, SHA1, SHA256, CRC32
-- **📦 Base64 Encoder**: Codifica/decodifica file e testo
-- **📋 JSON Formatter**: Parser, validator e formatter JSON
-- **🎯 QR Code Generator**: Generatore QR personalizzabile
-- **🎨 Color Picker**: Selettore colori avanzato
+### 1. Installazione Dipendenze Python
 
-### 🎨 **Creative Studio (7 Strumenti)**
-- **🎬 Video Editor**: Editor video con timeline
-- **🎵 Audio Editor**: Processing e editing audio
-- **📊 Presentation Maker**: Creatore presentazioni
-- **📈 Infographic Creator**: Designer infografiche
-- **🏷️ Logo Designer**: Designer logo AI-powered
-- **😂 Meme Generator**: Generatore meme con template
-- **🎭 Art Generator**: Generatore arte digitale
-
-### 📱 **Productivity Suite (8 Strumenti)**
-- **📋 Task Manager**: Gestione progetti e attività
-- **📓 Note Taking**: Sistema note avanzato con markup
-- **📅 Calendar**: Calendario con planning integrato
-- **🌤️ Weather Station**: Previsioni meteo real-time
-- **💱 Currency Converter**: Convertitore valute con tassi live
-- **📈 Stock Tracker**: Tracker mercati finanziari
-- **⏱️ Timer Suite**: Pomodoro, stopwatch, countdown
-- **🌍 World Clock**: Orologi mondiali fusi orari
-
-### 🎮 **Entertainment Hub (6 Strumenti)**
-- **🎮 Mini Games**: Collezione giochi integrati
-- **🎵 Music Tools**: Player e strumenti musicali
-- **❓ Quiz Generator**: Generatore quiz personalizzati
-- **📚 Story Generator**: Creatore storie AI
-- **🎲 Random Generator**: Generatori casuali vari
-- **🎪 Fun Tools**: Strumenti divertimento
-
-## 🚀 Installazione Ultra-Rapida
-
-### ⚡ Quick Start (30 secondi)
 ```bash
-# Clona repository
-git clone https://github.com/tuousername/manus-ai-ultra.git
-cd manus-ai-ultra
-
-# Installa dipendenze
-npm install
-
-# Avvia server
-npm run dev
-
-# Apri http://localhost:5173 → TUTTO FUNZIONA!
+# Installa le dipendenze Python
+pip install -r requirements.txt
 ```
 
-### 🌐 Deploy GitHub Pages (1-Click)
-1. **Fork questo repository**
-2. **Settings → Pages → Source: GitHub Actions**
-3. **Push any change** → Deploy automatico
-4. **URL**: `https://tuousername.github.io/manus-ai-ultra`
+### 2. Avvio del Server Hubble (Opzionale)
 
-### 📦 Build Produzione
+Per immagini aggiornate automaticamente:
+
 ```bash
-npm run build    # Build ottimizzato
-npm run preview  # Preview locale
-# Deploy cartella 'dist' su qualsiasi hosting
+# Avvia il server con API Hubble
+python hubble_server.py
+
+# Oppure su una porta specifica
+python hubble_server.py 8080
 ```
 
-## 🔓 Zero Limitazioni Garantite
+Il server sarà disponibile su `http://localhost:8000`
 
-### ❌ **Cosa NON Serve**
-- ❌ **Login/Registrazione**: Accesso immediato totale
-- ❌ **API Keys**: Tutto funziona out-of-the-box
-- ❌ **Limiti Usage**: Uso completamente illimitato
-- ❌ **Paywall**: 100% gratuito per sempre
-- ❌ **Tracking**: Zero raccolta dati personali
-- ❌ **Internet**: Molte funzioni offline
+### 3. Apertura del Sito
 
-### ✅ **Cosa Ottieni**
-- ✅ **Accesso Totale**: Tutte le funzioni immediatamente
-- ✅ **Velocità**: Risultati in <1 secondo
-- ✅ **Privacy**: Dati solo nel tuo browser
-- ✅ **Offline**: Funziona senza internet
-- ✅ **Mobile**: Perfetto su smartphone
-- ✅ **Updates**: Aggiornamenti automatici
+Apri `index.html` nel browser o servilo tramite un web server:
 
-## 🎯 Come Usare Manus AI Ultra
-
-### 1. **Dashboard Centrale**
-- **8 Categorie** di strumenti organizzate
-- **59+ Tools** accessibili istantaneamente
-- **Search Bar** per trovare strumenti
-- **Favorites** per strumenti preferiti
-
-### 2. **Ricerca Web Integrata**
-- Clicca **"Web Search"** nella dashboard
-- **6 tipi di ricerca** disponibili
-- **Risultati real-time** da API reali
-- **No API key** richiesta
-
-### 3. **AI Chat Avanzato**
-- **Chat illimitato** senza restrizioni
-- **4 modalità**: Assistente, Creativo, Tecnico, Analitico
-- **Memoria persistente** delle conversazioni
-- **Comandi vocali** integrati
-
-### 4. **Tools Specializzati**
-- **Image Editor**: Upload → Edit → Download
-- **Document Analyzer**: Upload PDF/Word → Analisi AI
-- **Code Generator**: Prompt → Codice in qualsiasi linguaggio
-- **Text Tools**: Analisi completa testi
-
-## 🛠️ Architettura Ultra-Moderna
-
-### Stack Tecnologico
-```
-Frontend: React 18 + TypeScript + Vite
-UI: TailwindCSS + Radix UI + Framer Motion
-APIs: DuckDuckGo, Unsplash, arXiv, RSS
-Storage: IndexedDB + LocalStorage
-PWA: Service Worker + Manifest
-Build: Ultra-optimized con code splitting
-```
-
-### Struttura Progetto
-```
-src/
-├── components/
-│   ├── dashboard/          # Dashboard principale
-│   ├── tools/              # 59+ strumenti individuali
-│   ├── chat/               # Sistema chat AI
-│   └── ui/                 # Componenti UI base
-├── services/
-│   ├── realSearchService.ts    # API ricerche reali
-│   ├── aiService.ts           # Motore AI
-│   └── storageService.ts      # Persistenza dati
-├── utils/
-│   ├── toolsConfig.ts         # Configurazione tools
-│   └── apiIntegrations.ts     # Integrazioni API
-└── hooks/                     # React hooks custom
-```
-
-## 🔧 Personalizzazione Avanzata
-
-### Configurazione AI
-```typescript
-// src/services/aiService.ts
-export const AI_CONFIG = {
-  name: "Il Tuo Nome AI",
-  personality: {
-    formality: 50,     // 0-100
-    creativity: 80,    // 0-100
-    detail: 70         // 0-100
-  },
-  features: {
-    webSearch: true,
-    codeGen: true,
-    imageGen: true,
-    voiceChat: true
-  }
-};
-```
-
-### Aggiungere Nuovi Tools
-```typescript
-// src/utils/toolsConfig.ts
-export const customTool = {
-  id: 'my-tool',
-  name: 'Il Mio Tool',
-  category: 'productivity',
-  icon: '🛠️',
-  component: MyToolComponent,
-  description: 'Descrizione del tool'
-};
-```
-
-### Temi Personalizzati
-```css
-/* src/index.css */
-:root {
-  --primary: 262 83% 58%;     /* Viola */
-  --secondary: 217 91% 60%;   /* Blu */
-  --background: 0 0% 100%;    /* Bianco */
-}
-
-.dark {
-  --primary: 262 83% 58%;
-  --secondary: 217 91% 60%;
-  --background: 224 71% 4%;   /* Nero */
-}
-```
-
-## 📊 Performance e Compatibilità
-
-| Platform | Support | Performance | Features |
-|----------|---------|-------------|-----------|
-| **Desktop** | ✅ Full | ⚡ 0.3s load | 🔥 All tools |
-| **Mobile** | ✅ Full | ⚡ 0.5s load | 🔥 All tools |
-| **Tablet** | ✅ Full | ⚡ 0.4s load | 🔥 All tools |
-| **Offline** | ✅ 80% | ⚡ Instant | 🔥 Core tools |
-
-### Browser Support
-- **Chrome 90+**, **Firefox 88+**, **Safari 14+**, **Edge 90+**
-- **Mobile**: iOS Safari 14+, Chrome Mobile 90+
-- **Features**: 100% supporto su browser moderni
-
-## 🐛 Troubleshooting
-
-### Problemi Comuni
 ```bash
-# Tool non carica
-→ Ricarica pagina (Ctrl+F5)
+# Metodo 1: Direttamente dal file
+# Apri index.html nel browser
 
-# Ricerca web non funziona
-→ Verifica connessione internet
+# Metodo 2: Server HTTP semplice
+python -m http.server 3000
+# Poi vai su http://localhost:3000
 
-# Performance lente
-→ Chiudi tab non necessarie
-
-# Storage pieno
-→ Pulisci dati browser
+# Metodo 3: Con il server Hubble integrato
+python hubble_server.py
+# Il sito sarà su http://localhost:8000
 ```
 
-### Debug Mode
-```javascript
-// Attiva debug in console browser
-localStorage.setItem('DEBUG_MODE', 'true');
-location.reload();
+## 📡 API Endpoints
+
+Quando il server Hubble è attivo:
+
+- `GET /api/hubble/images` - Ottieni tutte le immagini
+- `GET /api/hubble/images?category=galaxies` - Filtra per categoria
+- `GET /api/hubble/status` - Stato del servizio
+
+## 🎯 Struttura del Progetto
+
+```
+volontari-cuore-website/
+├── index.html              # Pagina principale
+├── css/
+│   └── styles.css          # Stili CSS
+├── js/
+│   └── script.js           # JavaScript principale
+├── images/                 # Immagini delle divise
+├── hubble_api.py          # API per immagini Hubble
+├── hubble_server.py       # Server web integrato
+├── requirements.txt       # Dipendenze Python
+└── README.md             # Questo file
 ```
 
-## 🌟 Funzionalità Innovative
+## 🌌 Sezione Astronomia
 
-### 🔍 **Real Search APIs**
-- **DuckDuckGo**: Ricerche web senza tracking
-- **Unsplash**: Milioni di immagini HD gratuite
-- **arXiv**: Database paper scientifici globale
-- **RSS Feeds**: Notizie real-time da fonti multiple
+La sezione astronomia include:
 
-### 🧠 **Smart AI Features**
-- **Context Awareness**: L'AI ricorda conversazioni
-- **Multi-Modal**: Testo, immagini, voce, documenti
-- **Learning**: Si adatta al tuo stile comunicativo
-- **Instant Response**: <1s tempo risposta medio
+- **Aggiornamento Automatico**: Ogni 30 minuti
+- **Immagini Reali**: Dal telescopio spaziale Hubble
+- **Categorie**:
+  - 🌌 Galassie
+  - 🌠 Nebulose  
+  - 🪐 Pianeti
+  - ⭐ Ammassi Stellari
+- **Fallback**: Se l'API non è disponibile, usa immagini statiche
 
-### 📱 **PWA Advanced**
-- **Installabile**: Come app nativa su ogni device
-- **Offline First**: Funziona completamente senza internet
-- **Background Sync**: Sincronizzazione automatica
-- **Fast Loading**: Service Worker per cache intelligente
+## 🛠️ Configurazione
 
-## 🤝 Contribuire
+### Personalizzazione
 
-### Development Setup
-```bash
-# Fork repository su GitHub
-# Clone locale
-git clone https://github.com/tuousername/manus-ai-ultra
-cd manus-ai-ultra
+1. **Nome Organizzazione**: Modifica in `index.html`
+2. **Colori**: Aggiorna le variabili CSS in `styles.css`
+3. **Immagini Divise**: Sostituisci i file nella cartella `images/`
 
-# Setup ambiente
-npm install
+### Aggiornamento Immagini
 
-# Sviluppo con hot reload
-npm run dev
+Il sistema scarica automaticamente nuove immagini, ma puoi anche:
 
-# Test build
-npm run build
-npm run preview
+```python
+# Aggiornamento manuale
+from hubble_api import HubbleImageUpdater
+updater = HubbleImageUpdater()
+updater.fetch_latest_images()
 ```
 
-### Aggiungere Nuovi Tools
-1. **Crea componente** in `src/components/tools/NewTool.tsx`
-2. **Registra tool** in `src/utils/toolsConfig.ts`
-3. **Test funzionalità** con `npm run dev`
-4. **Commit e PR** su GitHub
+## 🎨 Divise Personalizzate
 
-### Guidelines Contribuzione
-- **TypeScript**: Usa sempre tipizzazione forte
-- **Tests**: Aggiungi test per nuove funzionalità
-- **Documentation**: Documenta API e componenti
-- **Performance**: Ottimizza per velocità
+Il sito include immagini delle divise personalizzate:
 
-## 📄 Licenza e Credits
+- **Divisa Estiva**: Polo gialla fluorescente
+- **Divisa Invernale**: Giacca imbottita
+- **Gilet Alta Visibilità**: Per servizi esterni
+- **Pantaloni Tecnici**: Coordinati con le divise
 
-### Licenza
-**MIT License** - Uso libero per progetti commerciali e non commerciali
+## 📱 Responsive Design
 
-### APIs Integrate
-- **DuckDuckGo**: Ricerca web (gratuita, no API key)
-- **Unsplash**: Immagini (gratuita, rate limited)
-- **arXiv**: Paper scientifici (gratuita, open access)
-- **RSS Feeds**: Notizie (gratuite, pubbliche)
+Il sito si adatta automaticamente a:
+- 💻 Desktop
+- 📱 Mobile
+- 📟 Tablet
 
-### Tech Stack Credits
-- **React 18**: Meta/Facebook
-- **TypeScript**: Microsoft
-- **Vite**: Evan You
-- **TailwindCSS**: Tailwind Labs
-- **Radix UI**: WorkOS
+## 🔧 Risoluzione Problemi
 
-## 🚀 Roadmap Futuro
+### Server Non Si Avvia
+- Verifica che la porta sia libera
+- Controlla le dipendenze Python
 
-### v3.0 Features Planned
-- [ ] **Plugin System**: Estensioni di terze parti
-- [ ] **Cloud Sync**: Sincronizzazione cross-device opzionale
-- [ ] **Collaboration**: Lavoro di squadra real-time
-- [ ] **Advanced AI**: Integrazione modelli più avanzati
-- [ ] **More APIs**: Weather, Maps, Social media reali
-- [ ] **Mobile App**: React Native version nativa
+### Immagini Non Si Caricano
+- Il sito funziona anche senza server (immagini statiche)
+- Controlla la connessione internet
+- Verifica i CORS del browser
 
-### Community Wishlist
-- [ ] **Tool Marketplace**: Condivisione community tools
-- [ ] **Templates Library**: Template condivisi utenti
-- [ ] **User Themes**: Temi personalizzati community
-- [ ] **Extensions Store**: Store estensioni verificate
+### Aggiornamento Non Funziona
+- Riavvia il server Hubble
+- Controlla i log di Python
 
-## 📞 Supporto e Community
+## 📄 Licenza
 
-- **🐛 Bug Reports**: [GitHub Issues](https://github.com/tuousername/manus-ai-ultra/issues)
-- **💡 Feature Requests**: [GitHub Discussions](https://github.com/tuousername/manus-ai-ultra/discussions)
-- **📖 Documentation**: [Wiki Completa](https://github.com/tuousername/manus-ai-ultra/wiki)
-- **🚀 Releases**: [Changelog](https://github.com/tuousername/manus-ai-ultra/releases)
+Progetto per uso educativo e sociale dell'iniziativa "Volontari del Cuore Bolognetta".
 
-## 🏆 Hall of Fame
+## 📞 Contatti
 
-### Project Milestones
-- ✅ **59+ Tools Operativi**: Più completo AI assistant esistente
-- ✅ **Real APIs**: Prime integrazioni API reali funzionanti
-- ✅ **Zero Limitations**: Nessuna barriera accesso/uso
-- ✅ **Ultra Performance**: Sub-second load times
-- ✅ **Mobile Perfect**: Design responsive state-of-art
-- ✅ **PWA Excellence**: App-like experience perfetta
-- ✅ **Privacy First**: Zero tracking, dati 100% locali
+**Giulio Francesco Lombino**  
+📧 Email: [telecronaca1989@gmail.com](mailto:telecronaca1989@gmail.com)  
+📱 WhatsApp: [+39 380 389 9860](https://wa.me/393803899860)  
+☎️ Telefono: [091 873 7047](tel:+390918737047)  
 
-### Technical Achievements
-- ✅ **React + TypeScript**: Type-safe su 100% codebase
-- ✅ **API Integrations**: 4 servizi esterni integrati
-- ✅ **Performance**: Lighthouse score 95+ su tutte metriche
-- ✅ **Accessibility**: WCAG 2.1 AA compliant
-- ✅ **SEO Optimized**: Meta tags e structured data
-- ✅ **Security**: CSP headers e secure defaults
+## 🤝 Contributi
+
+Per modifiche o miglioramenti, contatta Giulio Francesco Lombino utilizzando i contatti sopra.
 
 ---
 
-⭐ **Se Manus AI Ultra ti è utile, lascia una stella su GitHub!** ⭐
-
-🔥 **LA PIATTAFORMA AI PIÙ COMPLETA E AVANZATA MAI CREATA** 🔥
-
-![Ultimate AI Platform](https://img.shields.io/badge/Ultimate-AI%20Platform-purple?style=for-the-badge)
-![No Limits](https://img.shields.io/badge/No-Limits-green?style=for-the-badge)
-![59+ Tools](https://img.shields.io/badge/59+-Tools-blue?style=for-the-badge)
-
-**🎯 Ready to revolutionize your workflow? Deploy Manus AI Ultra today!**
+**Creato con ❤️ per portare le meraviglie dell'universo nelle case di cura**
